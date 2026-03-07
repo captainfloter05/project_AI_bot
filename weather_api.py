@@ -2,7 +2,7 @@ import requests
 
 # Вставьте сюда ваш действующий ключ доступа к API weatherstack
 # Получить можно после бесплатной регистрации на https://weatherstack.com/
-API_KEY = "32afd9d2f86907866bc4c47cae8394d0"
+API_KEY = "YOUR_API_KEY"
 BASE_URL = "http://api.weatherstack.com/current"
 
 def get_weather(city):
