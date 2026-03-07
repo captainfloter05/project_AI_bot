@@ -2,7 +2,7 @@ import requests
 
 # Вставьте сюда ваш действующий ключ доступа к API weatherstack
 # Получить можно после бесплатной регистрации на https://weatherstack.com/
-API_KEY = "ede262076d1ab3d682a897e94fb0eab8"  # Замените на реальный ключ
+API_KEY = "YOUR_API_KEY"  # Замените на реальный ключ
 BASE_URL = "http://api.weatherstack.com/current"
 
 def get_weather(city):
@@ -50,4 +50,5 @@ def get_weather(city):
     except requests.exceptions.RequestException as e:
         return f"Ошибка при запросе погоды: {e}"
     except (KeyError, ValueError) as e:
+
         return f"Не удалось обработать данные о погоде. Ошибка: {e}"
