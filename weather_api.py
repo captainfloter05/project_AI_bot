@@ -1,15 +1,12 @@
 import requests
 
-# Вставьте сюда ваш действующий ключ доступа к API weatherstack
-# Получить можно после бесплатной регистрации на https://weatherstack.com/
-API_KEY = "YOUR_API_KEY"
+API_KEY = "da832ccda20b80ea5f5fc30e1d11a19d"  # замените на реальный ключ
 BASE_URL = "http://api.weatherstack.com/current"
 
-def get_weather(city):
+def get_weather(city, date=None):
     """
-    Запрашивает текущую погоду для города через API weatherstack.com.
-    Возвращает строку с температурой, описанием погоды и скоростью ветра.
-    В случае ошибки возвращает сообщение о проблеме.
+    Запрашивает погоду. Если указана дата, выводит уведомление,
+    что прогноз на дату не поддерживается, и показывает текущую погоду.
     """
     if not city:
         return "Укажите название города."
@@ -17,20 +14,18 @@ def get_weather(city):
     params = {
         "access_key": API_KEY,
         "query": city,
-        "units": "m"  # 'm' для метрической системы (температура в °C, скорость ветра в км/ч)
+        "units": "m"
     }
 
     try:
         response = requests.get(BASE_URL, params=params, timeout=10)
-        response.raise_for_status()  # Выбросит исключение для статусов 4xx/5xx
+        response.raise_for_status()
         data = response.json()
 
-        # Проверяем, не вернул ли API ошибку (например, неверный ключ или город не найден)
         if "error" in data:
             error_info = data["error"].get("info", "Неизвестная ошибка")
             return f"Ошибка API погоды: {error_info}"
 
-        # Проверяем, есть ли данные о текущей погоде
         if "current" not in data or "location" not in data:
             return "Не удалось получить данные о погоде для указанного места."
 
@@ -39,12 +34,17 @@ def get_weather(city):
         current = data["current"]
 
         temperature = current["temperature"]
-        # Описание погоды может быть списком, берём первый элемент
         weather_descriptions = current["weather_descriptions"][0] if current["weather_descriptions"] else "нет данных"
-        wind_speed = current["wind_speed"]  # скорость в км/ч
+        wind_speed = current["wind_speed"]
 
-        return (f"Погода в {location_name}, {country}: {temperature}°C, "
-                f"{weather_descriptions}, ветер {wind_speed} км/ч")
+        base_response = (f"Погода в {location_name}, {country}: {temperature}°C, "
+                         f"{weather_descriptions}, ветер {wind_speed} км/ч")
+
+        if date:
+            # Демонстрационная обработка даты
+            return f"Прогноз на {date} пока не доступен. {base_response}"
+        else:
+            return base_response
 
     except requests.exceptions.Timeout:
         return "Сервер погоды не ответил вовремя. Попробуйте позже."
@@ -53,5 +53,4 @@ def get_weather(city):
     except requests.exceptions.RequestException as e:
         return f"Ошибка при запросе погоды: {e}"
     except (KeyError, ValueError) as e:
-        # Ошибка парсинга JSON или отсутствия ожидаемых полей
         return f"Не удалось обработать данные о погоде. Ошибка: {e}"
