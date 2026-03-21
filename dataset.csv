@@ -1,0 +1,201 @@
+text,intent
+привет,greeting
+здравствуйте,greeting
+добрый день,greeting
+доброе утро,greeting
+добрый вечер,greeting
+приветствую,greeting
+здравия желаю,greeting
+здравствуй,greeting
+приветик,greeting
+хай,greeting
+здорово,greeting
+приветствую вас,greeting
+доброго времени суток,greeting
+салют,greeting
+"здравствуйте, как дела",greeting
+"привет, как жизнь",greeting
+"добрый день, чем занимаетесь",greeting
+"здравствуйте, это бот?",greeting
+"привет, я пользователь",greeting
+"здравствуйте, помогите",greeting
+"приветствую, бот",greeting
+"здравствуйте, я здесь впервые",greeting
+"привет, погода",greeting
+"здравствуйте, как настроение",greeting
+"добрый день, есть вопросы",greeting
+"привет, я новенький",greeting
+"здравствуйте, мне нужна помощь",greeting
+"доброе утро, бот",greeting
+"здравствуйте, который час",greeting
+"привет, сумма чисел",greeting
+"добрый день, погода",greeting
+"приветствую, пока",greeting
+"здравствуйте, до свидания",greeting
+"добрый вечер, что нового",greeting
+"привет, как тебя зовут",greeting
+"здравствуйте, я хочу узнать погоду",greeting
+"привет, сложи два числа",greeting
+"доброе утро, сколько времени",greeting
+привет,greeting
+здравствуйте,greeting
+пока,goodbye
+до свидания,goodbye
+всего хорошего,goodbye
+удачи,goodbye
+до встречи,goodbye
+прощай,goodbye
+пока пока,goodbye
+бывай,goodbye
+счастливо,goodbye
+до скорого,goodbye
+"пока, бот",goodbye
+"до свидания, спасибо",goodbye
+всего доброго,goodbye
+до связи,goodbye
+увидимся,goodbye
+"пока, пока",goodbye
+до завтра,goodbye
+"пока, пока, пока",goodbye
+прощайте,goodbye
+"до свидания, приятно было пообщаться",goodbye
+"все, я ухожу",goodbye
+"пока, удачи",goodbye
+"до встречи, бот",goodbye
+всего наилучшего,goodbye
+счастливо оставаться,goodbye
+"пока, спасибо за помощь",goodbye
+"до свидания, пока",goodbye
+"удачи, бот",goodbye
+"прощай, до новых встреч",goodbye
+"все, пока",goodbye
+"до скорого, бот",goodbye
+"счастливо, пока",goodbye
+"до свидания, я выхожу",goodbye
+"пока, всего хорошего",goodbye
+"до встречи, пока",goodbye
+"прощайте, бот",goodbye
+"увидимся, пока",goodbye
+"все, до свидания",goodbye
+пока,goodbye
+до свидания,goodbye
+сумма 5 10,addition
+сложи 2 и 3,addition
+5 плюс 7,addition
+сколько будет 12 + 15,addition
+прибавь 8 к 3,addition
+10 + 20,addition
+сложи 4 и 6,addition
+сумма чисел 9 и 1,addition
+1 + 1,addition
+100 + 200,addition
+сложи 5.5 и 2.5,addition
+15 + 15,addition
+прибавь 7 к 8,addition
+сколько получится 3 + 4,addition
+сумма 8 и 9,addition
+сложи 12 и 7,addition
+5 плюс 5,addition
+10 + 5,addition
+прибавь 2 к 2,addition
+сумма 1000 и 500,addition
+сложи 1.2 и 3.4,addition
+5 + 3,addition
+7 + 2,addition
+сложи 9 и 8,addition
+прибавь 10 к 10,addition
+сумма 25 и 25,addition
+сложи 0.5 и 0.5,addition
+сколько будет 4 + 4,addition
+сумма 3 и 7,addition
+сложи 6 и 4,addition
+8 + 2,addition
+прибавь 1 к 1,addition
+сумма 12 и 8,addition
+сложи 15 и 5,addition
+20 + 30,addition
+сколько будет 2 + 2,addition
+сумма 1 и 2,addition
+сложи 10 и 20,addition
+прибавь 50 к 50,addition
+сумма 5 10,addition
+сколько времени,time
+который час,time
+текущее время,time
+дата и время,time
+какой сегодня день,time
+какая дата,time
+какое сегодня число,time
+покажи время,time
+часы,time
+время,time
+сейчас сколько,time
+точное время,time
+который сейчас час,time
+дата,time
+сегодняшняя дата,time
+число,time
+день недели,time
+какой день,time
+сколько сейчас времени,time
+время московское,time
+который час в москве,time
+дата сегодня,time
+текущая дата,time
+часы и минуты,time
+покажи дату,time
+сколько часов,time
+который час сейчас,time
+текущее время и дата,time
+какое число сегодня,time
+какой сегодня день недели,time
+время по гринвичу,time
+который час по местному,time
+сколько минут,time
+текущий час,time
+дата и время сейчас,time
+покажи текущее время,time
+сколько времени сейчас,time
+"который час, бот",time
+какая сегодня дата,time
+время в россии,time
+погода в москве,weather
+какая погода,weather
+будет ли дождь,weather
+прогноз погоды,weather
+температура на улице,weather
+погода сегодня,weather
+что с погодой,weather
+сколько градусов,weather
+погода в спб,weather
+погода в новосибирске,weather
+прогноз на завтра,weather
+температура в москве,weather
+какая погода в лондоне,weather
+идет ли дождь,weather
+сильный ветер,weather
+солнечно ли,weather
+погода в екатеринбурге,weather
+прогноз погоды на сегодня,weather
+температура сейчас,weather
+какая температура,weather
+будет ли снег,weather
+погода в казани,weather
+погода в сочи,weather
+прогноз на выходные,weather
+температура воздуха,weather
+что за погода,weather
+погода на неделю,weather
+какая погода завтра,weather
+погода в россии,weather
+температура в спб,weather
+погода в киеве,weather
+прогноз погоды на завтра,weather
+будет ли дождь сегодня,weather
+снег ли,weather
+ветер какой,weather
+погода в краснодаре,weather
+погода в воронеже,weather
+погода в самаре,weather
+погода в омске,weather
+погода в москве,weather

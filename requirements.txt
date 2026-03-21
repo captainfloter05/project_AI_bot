@@ -1,0 +1,4 @@
+requests
+spacy
+scikit-learn
+joblib
