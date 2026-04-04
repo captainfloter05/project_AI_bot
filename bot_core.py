@@ -5,7 +5,6 @@ import spacy
 from weather_api import get_weather
 from database import init_db
 
-# Состояния диалога
 class DialogState:
     START = "start"
     WAIT_CITY = "wait_city"
@@ -13,10 +12,10 @@ class DialogState:
 
 class ChatBot:
     def __init__(self):
+        # Загрузка языковой модели spaCy (та же, что использовалась при обучении)
         self.nlp = spacy.load("ru_core_news_sm")
-        # Загрузка ML модели
+        # Загрузка обученного классификатора (логистическая регрессия на эмбеддингах)
         self.model = joblib.load("model.pkl")
-        self.vectorizer = joblib.load("vectorizer.pkl")
         self.classes = self.model.classes_
 
         self.user_states = {}
@@ -26,7 +25,7 @@ class ChatBot:
 
         init_db()
 
-    # Предобработка для ML (аналогично обучению)
+    # Вспомогательная предобработка (не используется для ML, но нужна для извлечения сущностей)
     def _preprocess(self, text):
         doc = self.nlp(text)
         tokens = []
@@ -36,8 +35,8 @@ class ChatBot:
         return " ".join(tokens)
 
     def _predict_intent(self, text):
-        processed = self._preprocess(text)
-        vec = self.vectorizer.transform([processed])
+        # Получаем вектор предложения через spaCy (усреднение токенов)
+        vec = self.nlp(text).vector.reshape(1, -1)
         proba = self.model.predict_proba(vec)[0]
         confidence = max(proba)
         intent = self.model.predict(vec)[0]
@@ -52,10 +51,8 @@ class ChatBot:
         return None
 
     def _extract_numbers(self, text):
-        """Возвращает список чисел из текста (целые и дробные)."""
         return [float(x) for x in re.findall(r"\d+\.?\d*", text)]
 
-    # Обработчики команд
     def greet(self):
         return "Здравствуйте! Чем могу помочь?"
 
@@ -74,7 +71,6 @@ class ChatBot:
     def unknown(self):
         return "Извините, я не понимаю ваш запрос."
 
-    # Управление состоянием
     def _get_state(self, user_id):
         return self.user_states.get(user_id, DialogState.START)
 
@@ -86,7 +82,6 @@ class ChatBot:
             self.user_data[user_id] = {}
         return self.user_data[user_id]
 
-    # Основной метод обработки
     def process(self, user_id: str, message: str) -> str:
         state = self._get_state(user_id)
         data = self._get_user_data(user_id)
@@ -140,7 +135,6 @@ class ChatBot:
                 response = get_weather(city, date)
                 self.last_intent = "weather_with_date"
                 self.last_city = city
-                # Очистка данных
                 del self.user_data[user_id]
                 self._set_state(user_id, DialogState.START)
                 return response

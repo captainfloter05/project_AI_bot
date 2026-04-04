@@ -37,8 +37,28 @@ text,intent
 "здравствуйте, я хочу узнать погоду",greeting
 "привет, сложи два числа",greeting
 "доброе утро, сколько времени",greeting
+"здравствуйте, извините, не подскажете?",greeting
+"привет, давно не виделись",greeting
+доброго здоровья,greeting
+моё почтение,greeting
+"здравствуйте, очень приятно",greeting
 привет,greeting
 здравствуйте,greeting
+добрый день,greeting
+доброе утро,greeting
+добрый вечер,greeting
+приветствую,greeting
+здравия желаю,greeting
+здравствуй,greeting
+приветик,greeting
+хай,greeting
+здорово,greeting
+приветствую вас,greeting
+доброго времени суток,greeting
+салют,greeting
+"здравствуйте, как дела",greeting
+"привет, как жизнь",greeting
+"добрый день, чем занимаетесь",greeting
 пока,goodbye
 до свидания,goodbye
 всего хорошего,goodbye
@@ -77,8 +97,28 @@ text,intent
 "прощайте, бот",goodbye
 "увидимся, пока",goodbye
 "все, до свидания",goodbye
+бывайте здоровы,goodbye
+разрешите откланяться,goodbye
+"пока, спасибо за общение",goodbye
 пока,goodbye
 до свидания,goodbye
+всего хорошего,goodbye
+удачи,goodbye
+до встречи,goodbye
+прощай,goodbye
+пока пока,goodbye
+бывай,goodbye
+счастливо,goodbye
+до скорого,goodbye
+"пока, бот",goodbye
+"до свидания, спасибо",goodbye
+всего доброго,goodbye
+до связи,goodbye
+увидимся,goodbye
+"пока, пока",goodbye
+до завтра,goodbye
+"пока, пока, пока",goodbye
+прощайте,goodbye
 сумма 5 10,addition
 сложи 2 и 3,addition
 5 плюс 7,addition
@@ -118,7 +158,27 @@ text,intent
 сумма 1 и 2,addition
 сложи 10 и 20,addition
 прибавь 50 к 50,addition
+вычисли 123 + 456,addition
+прибавь 7.5 к 2.3,addition
+сложи числа 9 и 11,addition
+найди сумму 40 и 60,addition
+сколько будет 1000 плюс 2000,addition
 сумма 5 10,addition
+сложи 2 и 3,addition
+5 плюс 7,addition
+сколько будет 12 + 15,addition
+прибавь 8 к 3,addition
+10 + 20,addition
+сложи 4 и 6,addition
+сумма чисел 9 и 1,addition
+1 + 1,addition
+100 + 200,addition
+сложи 5.5 и 2.5,addition
+15 + 15,addition
+прибавь 7 к 8,addition
+сколько получится 3 + 4,addition
+сумма 8 и 9,addition
+сложи 12 и 7,addition
 сколько времени,time
 который час,time
 текущее время,time
@@ -159,6 +219,26 @@ text,intent
 "который час, бот",time
 какая сегодня дата,time
 время в россии,time
+подскажите точное время,time
+который час на ваших часах,time
+сегодня какое число,time
+день недели какой,time
+сколько времени,time
+который час,time
+текущее время,time
+дата и время,time
+какой сегодня день,time
+какая дата,time
+какое сегодня число,time
+покажи время,time
+часы,time
+время,time
+сейчас сколько,time
+точное время,time
+который сейчас час,time
+дата,time
+сегодняшняя дата,time
+число,time
 погода в москве,weather
 какая погода,weather
 будет ли дождь,weather
@@ -198,4 +278,24 @@ text,intent
 погода в воронеже,weather
 погода в самаре,weather
 погода в омске,weather
+узнай погоду в рязани,weather
+"какая сегодня погода, интересно?",weather
+не подскажете погоду?,weather
+что там на улице? тепло?,weather
+стоит ли брать зонт?,weather
+прогноз на сегодня в москве,weather
 погода в москве,weather
+какая погода,weather
+будет ли дождь,weather
+прогноз погоды,weather
+температура на улице,weather
+погода сегодня,weather
+что с погодой,weather
+сколько градусов,weather
+погода в спб,weather
+погода в новосибирске,weather
+прогноз на завтра,weather
+температура в москве,weather
+какая погода в лондоне,weather
+идет ли дождь,weather
+сильный ветер,weather
