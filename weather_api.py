@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = "274d1b470f7ead14f240f920092a916b"  # замените на реальный ключ
+API_KEY = "YOUR_API_KEY"  # замените на реальный ключ
 BASE_URL = "http://api.weatherstack.com/current"
 
 def get_weather(city, date=None):
