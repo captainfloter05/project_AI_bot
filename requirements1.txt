@@ -1,0 +1,8 @@
+transformers==4.38.0
+datasets==2.14.0
+torch>=2.1
+scikit-learn>=1.2.0
+pandas==1.5.3
+spacy>=3.5.0
+requests>=2.31.0
+joblib>=1.2.0
