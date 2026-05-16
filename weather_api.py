@@ -1,7 +1,7 @@
 import requests
 from datetime import date
 
-API_KEY = "cf2715cb8224be745202fddc843f1530"
+API_KEY = "YOUR_API_KEY"
 BASE_URL = "http://api.weatherstack.com/current"
 
 def get_weather(city, date_param=None):
