@@ -28,6 +28,12 @@ text,intent
 "привет, погода",greeting
 "здравствуйте, помогите",greeting
 "доброе утро, бот",greeting
+"привет, меня зовут Роман",greeting
+"здравствуйте, меня зовут Анна",greeting
+"добрый день, я Александр",greeting
+"привет, я Мария",greeting
+"здравствуйте, представляйтесь, меня зовут Дмитрий",greeting
+"добрый вечер, меня зовут Елена",greeting
 пока,goodbye
 до свидания,goodbye
 всего хорошего,goodbye
@@ -180,3 +186,137 @@ text,intent
 что там на улице? тепло?,weather
 стоит ли брать зонт?,weather
 прогноз на сегодня в москве,weather
+что ты умеешь,help
+помощь,help
+список команд,help
+какие у тебя функции,help
+что ты можешь,help
+расскажи о себе,help
+твои возможности,help
+помоги,help
+нужна помощь,help
+как тебя использовать,help
+что я могу спросить,help
+подскажи,help
+что ты умеешь делать,help
+функции бота,help
+команды,help
+в чем ты помогаешь,help
+как с тобой работать,help
+справка,help
+что ты понимаешь,help
+твои навыки,help
+покажи список команд,help
+как дела,smalltalk
+как настроение,smalltalk
+что делаешь,smalltalk
+как жизнь,smalltalk
+как ты,smalltalk
+что нового,smalltalk
+как сам,smalltalk
+как поживаешь,smalltalk
+нормально,smalltalk
+отлично,smalltalk
+хорошо,smalltalk
+плохо,smalltalk
+не очень,smalltalk
+всё супер,smalltalk
+чё как,smalltalk
+как оно,smalltalk
+как самочувствие,smalltalk
+что слышно,smalltalk
+как твои дела,smalltalk
+как успехи,smalltalk
+что нового в мире,smalltalk
+расскажи что-нибудь,smalltalk
+пошути,smalltalk
+анекдот,smalltalk
+ты умный,smalltalk
+"бот, ты тут",smalltalk
+тебе нравится твоя работа?,smalltalk
+ты любишь свою работу?,smalltalk
+тебе нравится быть ботом?,smalltalk
+нравится ли тебе общаться с людьми?,smalltalk
+что ты думаешь о жизни?,smalltalk
+в чём смысл жизни?,smalltalk
+как ты относишься к людям?,smalltalk
+ты когда-нибудь устаёшь?,smalltalk
+у тебя есть мечта?,smalltalk
+о чём ты мечтаешь?,smalltalk
+какое твоё любимое время года?,smalltalk
+что ты любишь делать в свободное время?,smalltalk
+расскажи интересный факт,smalltalk
+как тебя зовут?,smalltalk
+как тебя называть?,smalltalk
+какое у тебя имя?,smalltalk
+ты кто?,smalltalk
+какое сегодня число,date
+сегодняшняя дата,date
+какое число,date
+какой день,date
+число,date
+дата сегодня,date
+какая сегодня дата,date
+какое сегодня число и месяц,date
+назови дату,date
+какой сегодня день месяца,date
+сегодняшнее число,date
+"какое сегодня число, бот",date
+подскажи дату,date
+число сегодня,date
+сколько времени,time_only
+который час,time_only
+текущее время,time_only
+точное время,time_only
+часы,time_only
+сколько сейчас времени,time_only
+время сейчас,time_only
+покажи время,time_only
+сколько минут,time_only
+который час сейчас,time_only
+текущий час,time_only
+время московское,time_only
+а завтра,weather_followup
+а послезавтра,weather_followup
+а в питере,weather_followup
+а в москве,weather_followup
+а в спб,weather_followup
+а на выходных,weather_followup
+а погода на завтра,weather_followup
+а что завтра,weather_followup
+а послезавтра какая погода,weather_followup
+а в другом городе,weather_followup
+а в новосибирске,weather_followup
+а в екатеринбурге,weather_followup
+а в казани,weather_followup
+а на неделе,weather_followup
+а что будет завтра,weather_followup
+а завтра дождь,weather_followup
+а послезавтра снег,weather_followup
+а в сочи,weather_followup
+а в крыму,weather_followup
+а в россии,weather_followup
+разность 10 3,subtraction
+вычти 5 из 8,subtraction
+10 минус 4,subtraction
+сколько будет 15 - 7,subtraction
+отними 2 от 9,subtraction
+12 - 5,subtraction
+вычисли разность 20 и 3,subtraction
+20 минус 3,subtraction
+100 - 50,subtraction
+разность чисел 9 и 1,subtraction
+отнять 7 от 10,subtraction
+сколько останется 8-2,subtraction
+умножь 5 на 6,multiplication
+произведение 3 и 7,multiplication
+5 * 8,multiplication
+сколько будет 4 умножить на 9,multiplication
+10 × 10,multiplication
+умножить 2 на 3,multiplication
+7 * 4,multiplication
+перемножь 6 и 7,multiplication
+произведение 2 и 8,multiplication
+12 умножить на 2,multiplication
+умножение 3*3,multiplication
+сколько будет 5 × 5,multiplication
